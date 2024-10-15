@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for responsive design and character encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weston's Chocolate Box</title>
+    <!-- Link to external stylesheet for styles -->
+    <link rel="stylesheet" href="choco.css">
+</head>
+<body>
+
+    <!-- Navigation bar section -->
+    <nav class="navbar">
+        <!-- Logo area -->
+        <div class="logo">Weston's Chocolate Box</div>
+
+        <!-- Navigation links for desktop and larger screens -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Build Your Box</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Occasions</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sign In</a></li>
+            <!-- Cart icon with basket label -->
+            <li><a href="#" class="cart-icon">Basket 🛒</a></li>
+        </ul>
+
+        <!-- Hamburger menu for mobile view -->
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!-- Script to handle the menu toggle for mobile view -->
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("navLinks");
+            // Toggle between showing and hiding the menu
+            if (navLinks.style.display === "block") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "block";
+            }
+        }
+    </script>
+<!-- Hamburger menu for mobile view -->
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+</nav>
+
+<!-- Hero Banner Section -->
+<section class="hero-banner">
+    <div class="hero-content">
+        <h1>Welcome to Weston's Chocolate Box</h1>
+        <p>Discover the finest chocolates, curated for every occasion.</p>
+        <a href="#" class="cta-button">Shop Now</a>
+    </div>
+</section>
+
+<!-- Chocolates Gallery Section -->
+<section class="chocolates-gallery">
+    <h2>Our Featured Chocolates</h2>
+    <div class="chocolate-items">
+        <div class="chocolate-item">
+            <img src="milk.jpg" alt="Milk Chocolate" />
+            <p>Milk Chocolate</p>
+        </div>
+        <div class="chocolate-item">
+            <img src="dark.jpg" alt="Dark Chocolate" />
+            <p>Dark Chocolate</p>
+        </div>
+        <div class="chocolate-item">
+            <img src="white.jpg" alt="White Chocolate" />
+            <p>White Chocolate</p>
+        </div>
+        <div class="chocolate-item">
+            <img src="truffles.jpg" alt="Assorted Truffles" />
+            <p>Assorted Truffles</p>
+        </div>
+    </div>
+</section>
+
+<!-- Script to handle the menu toggle for mobile view -->
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById("navLinks");
+        // Toggle between showing and hiding the menu
+        if (navLinks.style.display === "block") {
+            navLinks.style.display = "none";
+        } else {
+            navLinks.style.display = "block";
+        }
+    }
+</script>
+
+    <!-- Sign-in pop-up form -->
+    <div class="overlay" id="overlay"></div>
+
+    <div class="popup" id="signInPopup">
+        <h2>Sign In</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+            <button type="button" class="close-btn" id="closePopup">Close</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript for toggling the sign-in pop-up
+        const signInBtn = document.getElementById('signInBtn');
+        const signInPopup = document.getElementById('signInPopup');
+        const overlay = document.getElementById('overlay');
+        const closePopup = document.getElementById('closePopup');
+
+        // Show pop-up when 'Sign In' is clicked
+        signInBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            signInPopup.classList.add('active');
+            overlay.classList.add('active');
+        });
+
+        // Close pop-up when 'Close' button is clicked
+        closePopup.addEventListener('click', function() {
+            signInPopup.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+
+        // Close pop-up when clicking outside of the form
+        overlay.addEventListener('click', function() {
+            signInPopup.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+        </script>
+</body>
+</html>
