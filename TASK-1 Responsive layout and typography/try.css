@@ -1,0 +1,512 @@
+/* using the link tag to link the google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: #e9e9e9;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo img{
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;                             /* Use flexbox for layout */
+    align-items: center;                       /* Center items vertically */
+    font-size: 25px;                           /* Set font size */
+    list-style: none;                          /* Remove list bullets */
+    gap: 150px;
+    justify-content: center; 
+    margin-top: 50px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: -5px;
+}
+
+nav ul a {
+    text-decoration: none;                     /* Remove underline from links */
+    letter-spacing: 1.8px;   /* Set letter spacing */
+    color: black;
+}
+
+#main-content {
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 270px;
+    margin-right: 270px;
+    border: 1px solid black;
+  
+}
+
+
+#main-content h1 {
+    font-size: 100px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#main-content h2 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 80px;
+    font-weight: 200;
+}
+
+#main-content p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#para{
+    padding: 12px;
+}
+
+#para p{
+    line-height: 1px;
+    font-size: 22px;
+}
+
+#article-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+#article-content .column {
+    flex: 1;
+}
+
+
+#big-image {
+    background-color: #f0f0f0;}
+
+#side-images {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 0;
+
+}
+
+
+#author-content {
+    display: flex;
+    align-items: center;
+    margin: 40px 0; /* Adds space between the sections */
+    margin-top: 10px;
+    margin-left: 150px;
+    padding: 12px;
+
+}
+
+#author-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+
+#author-info {
+    max-width: 60%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#author-info h2{
+    text-align: center;
+}
+#author-content .author-info p {
+    margin-bottom: 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #14181d;
+    color: white;
+}
+
+
+@media  (min-width: 360px) and (max-width: 539px) {
+    /*  layout for small mobile (360px-540px)*/
+    body {
+        font-size: 12px;
+    }
+
+    #logo img {
+        width: 80px;
+        margin-top: 12px;
+    }
+nav{
+    margin-bottom: 12px;
+}
+    nav ul {
+        gap: 25px;
+        font-size: 17px;
+    }
+
+    #main-content {
+        margin: 0px;
+      
+    }
+
+    #main-content h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    #main-content h2 {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 12px;
+        margin-top: -12px;
+    }
+#para{
+    margin: 12px;
+}
+    #para p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 0%;
+        text-align: left;
+    }
+
+    #article-content {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        margin-top: 12px;
+
+    }
+
+    #image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #big-image {
+      display: none;
+    }
+
+    #side-images {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    #side-images div {
+        width: 100%;
+        height: auto;
+    }
+
+    #author-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 12px 0;
+        flex-direction: column-reverse;
+    }
+    #author #img{
+        width: 200px;
+    }
+
+    #author-info {
+        max-width: 100%;
+        text-align: left;
+    }
+    #main-content{
+        height: 302rem;
+
+    }
+   
+    footer {
+      margin-top: auto;
+     padding: 10px 0;   
+    }
+}
+
+@media (min-width:540px)and (max-width: 719px) {
+    /*  layout for large mobile (540px-720px)*/
+    body {
+        font-size: 12px;
+        /* padding: 12px; */
+    }
+
+    #logo img {
+        width: 80px;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    #main-content {
+        margin: 0px;
+      
+    }
+
+    #main-content h1 {
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+    #main-content h2 {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    #para{
+        padding: 20px;
+    }
+    #para p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    #article-content {
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px;
+        margin-top: -11px;
+    }
+
+    #image-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #big-image img{
+      display: none;
+    }
+
+    #side-images {
+        display: flex;
+        flex-direction: column;
+         width: 100%; 
+      
+        
+    }
+
+
+    #author-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        flex-direction: column-reverse;
+    }
+
+    #author-info {
+        max-width: 100%;
+        text-align: left;
+    }
+    #main-content{
+        height: 305rem;
+
+    }
+
+    footer {
+      margin-top: auto;
+
+        
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1023px) {
+        body {
+            font-size: 12px;
+        }
+    
+        #logo img {
+            width: 80px;
+            margin-top: 30px;
+        }
+    
+        nav ul {
+            gap: 30px;
+            font-size: 20px;
+            margin-top: 25px;
+        }
+    
+        #main-content {
+            margin: 30px;
+          
+        }
+    
+        #main-content h1 {
+            font-size: 55px;
+            text-align: center;
+        }
+    
+        #main-content h2 {
+            font-size: 55px;
+            text-align: center;
+        }
+    
+        #para{
+            padding: 30px;
+        }
+
+        #para p {
+            font-size: 25px;
+            line-height: 1.4;
+            margin-top: 5px;
+            text-align: left;
+        }
+    
+        #article-content {
+            flex-direction: column;
+            gap: 10px;
+            padding: 30px;
+            margin-top: -40px;}
+            
+    
+            #article-content p{
+                font-size: 25px;
+   
+            }
+
+#big-image {
+    display: none;
+}
+
+#side-images {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:repeat(2,1fr);
+    gap: 0;
+   
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#side-images  {
+    background-color: #eee;
+ 
+}
+
+#author-content {
+    display: flex;
+    align-items: center;
+    margin: 30px 0; /* Adds space between the sections */
+    margin-top: 0px;
+    margin-left: 50px;
+    padding: 12px;
+
+}
+
+#author-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+}
+
+#author-info {
+    max-width: 60%;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#author-info h2{
+    text-align: center;
+}
+#author-content .author-info p {
+    margin-bottom: 10px; 
+}
+
+footer {
+    margin-top: auto;
+      
+  }
+}
+/* This is the mediaQ for desktop */
+@media(min-width: 1024px){
+     #header nav{
+        margin-bottom: 50px;
+     }
+    
+    #image-section{
+        display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        list-style: none;
+        gap: 150px;
+        justify-content: center;
+        margin-top: 50px;
+        font-family: "Josefin Sans", sans-serif;
+        margin-bottom: 50px;
+    }
+
+    #big-image img,
+    #side-images img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+    #big-image{
+        width: 50%;
+    }
+
+    #big-image img{
+        display: flex;
+    }
+    #main-content{
+     width: 1000px;
+    margin: auto;
+
+}
+
+    #side-images{
+        width: 50%;
+    }
+    #side-images .Second-row-images{
+        margin-top: -4px;
+    }
+
+}
+

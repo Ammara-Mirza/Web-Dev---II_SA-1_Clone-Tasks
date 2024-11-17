@@ -1,0 +1,491 @@
+
+
+body {
+    font-family: "Lato", sans-serif;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Teko',sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 5);
+
+
+}
+.header h1 {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    font-family: "Lato", sans-serif;
+
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+
+}
+.search {
+    font-family: 'Teko',sans-serif;
+    border: 2px solid black;
+    font-size: 2em;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 12px;
+    padding-left: 7px;
+}
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .movie-la-la-land,
+    .movie-hidden-figures,
+    .movie-palm-springs,
+    .movie-roger-rabbit,
+    .movie-hook, .movie-barbie
+   {
+        background-color: white;
+        border: 2px solid black;
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 5);
+        text-align: left;
+        align-items: center;
+        height: 670px;
+    }
+    
+.button3{
+    padding: 15px 20px;
+    font-size: 2em;
+    font-weight: bold; 
+    border: 2px solid black;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Teko',sans-serif;
+
+}
+   
+   
+
+.movie img {
+    width: 100%;
+    height: auto;
+}  
+
+
+
+/* mobile phone screens */
+@media(min-width:360px) and (max-width:719.5px){
+    body {
+        margin:0 auto;
+        width: 650px;
+        background-color:#070410;
+}
+
+
+.search {
+font-size: 2em;
+padding: 16px 16px;
+border-radius: 16px;
+width: 175px;
+background-color: #4dccbd;
+}
+
+.header{
+    font-size: 2em;
+}
+    .movie-la-la-land,
+    .movie-hidden-figures,
+    .movie-palm-springs,
+    .movie-roger-rabbit,
+    .movie-hook,
+    .movie-barbie
+    {   background-color: white;
+        border: 2px solid black;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+        height: 885px;
+    }
+    .main-content {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .nav{
+        display: none;
+    }    
+    .movie-barbie .text p,
+    .movie-la-la-land .text p,
+    .movie-hook .text p,
+    .movie-hidden-figures .text p,
+    .movie-palm-springs .text p,
+    .movie-roger-rabbit .text p{
+        padding: 16px;
+        font-size: 1.5em;
+    }
+    .button3{
+        padding: 19px 70px;
+        font-size: 2em;
+        font-weight: bold; 
+        border: 2px solid black;
+        background-color: #d3d3d3;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+        height: 40px;
+        margin-left: 26px;
+        text-align: center;
+        border-radius: 15px;
+        font-family: 'Teko',sans-serif;
+        background-color: #EEF36A;
+    
+    }
+    .button2{
+        padding: 19px 70px;
+        font-size: 2em;
+        font-weight: bold; 
+        border: 2px solid black;
+        background-color: #d3d3d3;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+        height: 40px;
+        margin-left: 26px;
+        text-align: center;
+        border-radius: 15px;
+        font-family: 'Teko',sans-serif;
+        background-color: #EEF36A;
+    
+    }}
+
+
+/* /* Tablet screens */
+@media (min-width: 720px) and (max-width: 1023px) {
+    body {
+        margin: 0 auto;
+        background-color: #f4f4f4;
+        font-family: "Lato", sans-serif;
+    }
+
+    .header {
+        font-size: 3em; 
+        padding: 16px 32px; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid black;
+        width: 1454px;
+        background-color: #4dccbd;
+    }
+
+    .header h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .nav {
+        display: flex;
+        gap: 32px; 
+        font-size: 35px;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .search {
+        font-size: 2em;
+        padding: 16px; 
+        border-radius: 16px; 
+        background-color: #eef36a;
+        cursor: pointer;
+        width: 251px;
+        text-align: center;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 32px; 
+        width: 1479px;
+        background-color: #070410;
+        
+        max-width: 1480px; 
+    }
+
+    .movie-barbie,
+    .movie-hook,
+    .movie-la-la-land,
+    .movie-hidden-figures,
+    .movie-palm-springs,
+    .movie-roger-rabbit {
+        background-color: white;
+        border: 2px solid black;
+        
+        box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 16px; 
+        height: 1400px;
+        width: 709px;
+        margin: 0; 
+        display: flex; 
+        padding: 16px;
+        flex-direction: column; 
+        box-sizing: border-box; 
+    }
+    .posters, .row {display: contents; }
+    .movie-barbie {
+        grid-column: 1/2; 
+        grid-row: 1/2;    
+    }
+    .movie-hook {
+        grid-column: 2/3; 
+        grid-row: 1/2;    
+    }
+    .movie-la-la-land {
+        grid-column: 1/2; 
+        grid-row: 2/3;   
+    }
+    .movie-hidden-figures {
+        grid-column: 2/3; 
+        grid-row: 2/3;   
+    }
+    .movie-palm-springs {
+        grid-column: 1/2;
+        grid-row: 3/4;    
+    }
+    .movie-roger-rabbit {
+        grid-column: 2/3; 
+        grid-row: 3/4;    
+    }
+
+    .movie img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .description {
+        padding: 16px;
+        font-size: 1.5em;
+    }
+
+    .text p {
+        margin: 0 0 16px;
+        font-size: 1.5em;
+        line-height: 1.6;
+    }
+
+    .button3 {
+       
+        padding: 19px 70px;
+        font-size: 3em;
+        font-weight: bold;
+        border: 2px solid black;
+        background-color: #4dccbd;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        width: 354px;
+        height: 178px;
+        border-radius: 15px; 
+        cursor: pointer;
+    }
+  
+    .button2 {
+       
+        padding: 19px 70px;
+        font-size: 3em;
+        font-weight: bold;
+        border: 2px solid black;
+        background-color: #4dccbd;
+        color: black;
+        text-align: center;
+        margin: 0 auto;
+        width: 354px;
+        height: 178px;
+        border-radius: 15px; 
+        cursor: pointer;
+        font-family: 'Teko',sans-serif
+    }
+}
+
+/* desktop screens */
+@media(min-width: 1024px) {
+    .header h1{
+font-size: 3em;
+font-family: 'Teko' , sans-serif;
+    }
+    .search {
+        font-family: 'Teko', sans-serif;
+        border: 2px solid black;
+        font-size: 1.5em;
+        background-color: #4dccbd;
+        cursor: pointer;
+        width: 100px;
+        border-radius: 12px;
+        padding-left: 7px;
+    }
+ .header{
+    background-color: #EEF36A;
+ }   
+    .movie-barbie{ 
+    max-width: 950px;
+    max-height:584px;
+}
+
+.movie-barbie img{
+    width:100%;
+    height: 360px;
+}
+
+.movie-barbie .description  {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+
+}
+.button2{
+    padding: 55px 20px;
+    font-size: 2em;
+    font-weight: bold; 
+    border: 2px solid black;
+    background-color: #4dccbd;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Teko',sans-serif;
+
+}
+
+
+.main-content{
+    
+    padding: 48px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    background-color: #070410;
+}
+.movie-la-la-land,
+.movie-hook{
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    max-width: 456px;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 5);
+    text-align: left;
+    align-items: center;
+    height: 825px;
+
+}
+.button3{
+    padding: 15px 20px;
+    font-size: 2em;
+    font-weight: bold; 
+    border: 2px solid black;
+    background-color: #4dccbd;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 15px;
+    font-family: 'Teko',sans-serif;
+
+}
+   
+    .movie-la-la-land .description,
+    .movie-hook .description{
+        padding: 26px;
+    }
+.movie-barbie .description .text,
+.movie-hook .description .text,
+.movie-hidden-figures .description .text,
+    .movie-palm-springs .description .text,
+    .movie-roger-rabbit .description .text, 
+    .movie-la-la-land .description .text{
+font-size: 1.5em;
+
+    }
+    
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    width: 100%;
+
+}
+.posters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 853px;
+    margin: 32px auto;
+}
+
+.movie-hidden-figures,
+.movie-palm-springs,
+.movie-roger-rabbit {
+    display: flex;
+    border: 1px solid #ccc;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 2px solid black;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 5);
+    height: 400px;
+    max-width: 852px;
+
+
+}
+.movie-hidden-figures img,
+.movie-palm-springs img,
+.movie-roger-rabbit img {
+    width: 417px;
+    height: 395px;
+    object-fit: cover;
+ 
+}
+
+.movie-hidden-figures .description,
+.movie-palm-springs .description,
+.movie-roger-rabbit .description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+}
